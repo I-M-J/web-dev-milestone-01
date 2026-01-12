@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake House</title>
+
+    <style>
+        form .basic-info label {
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="center.html">Center</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="auto.html">Margin Auto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cake House</h2>
+
+            <form>
+                <fieldset class="basic-info">
+                    <legend>Basic Info</legend>
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" name="" id="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Cake Info</legend>
+
+                    <input type="radio" name="cake" id="chocolate_cake">
+                    <label for="chocolate_cake">Chocolate Cake</label>
+
+                    <input type="radio" name="cake" id="vanilla_cake">
+                    <label for="vanilla_cake">Vanilla Cake</label>
+
+                    <input type="radio" name="cake" id="">
+                    <label for="">Strawberry Cake</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cream Selection</legend>
+
+                    <input type="checkbox" name="cream" id="ice_cream">
+                    <label for="ice_cream">Ice Cream</label>
+
+                    <input type="checkbox" name="cream" id="vanilla_cream">
+                    <label for="vanilla_cream">Vanilla Cream</label>
+
+                    <input type="checkbox" name="cream" id="chocolate_cream">
+                    <label for="chocolate_cream">Chocolate Cream</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extra Info</legend>
+
+                    <textarea cols="40" rows="4" name="" id=""></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+

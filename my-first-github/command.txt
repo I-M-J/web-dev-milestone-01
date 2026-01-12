@@ -1,0 +1,29 @@
+echo "# my-first-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/I-M-J/my-first-github.git
+git push -u origin main
+
+
+
+# 1. One time for each repository to start git
+git init
+
+# 2. Every time to add something
+git add .
+
+# 3. Every time you commit
+# -m means message
+git commit -m "first commit"
+
+# 4. To rename your current branch to main
+# -M for force
+git branch -M main
+
+# 5. Link to the remote repository
+git remote add origin https://github.com/I-M-J/my-first-github.git
+
+# 6. Push to the remote repository
+git push -u origin main

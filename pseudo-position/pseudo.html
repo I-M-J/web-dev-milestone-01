@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h3 {
+            color: peru ;
+        }
+
+        /* Hover: Mouse Over */
+        h3:hover {
+            color: tomato;
+            background-color: skyblue;
+        }
+
+        input:focus {
+            color: blue;
+            /* padding-left: 20px; */
+            outline: 0;
+            border: 1px solid purple
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        li:first-child {
+            color: aqua;
+        }
+
+        /* n starts from 0 */
+        li:nth-child(2n) {
+            color: purple;
+        }
+
+        li:nth-child(2n+1) {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h3>My Heading</h3>
+    
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    
+    <a href="www.duckduckgo.com">DuckDuckGo</a>
+    <a href="duck.ai">Duck AI</a>
+
+    <ul>
+        <li>Alpha</li>
+        <li>Beta</li>
+        <li>Gamma</li>
+        <li>Delta</li>
+        <li>Epsilon</li>
+        <li>Zeta</li>
+        <li>Eta</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Flex</title>
+
+    <style>
+        .container {
+            display: flex;
+            background-color: aquamarine;
+            /* horizontally Center */
+            justify-content: center; 
+            /* Vertically Center */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+            /* stretch will not work if child has fixed height */
+            height: 800px;
+        }
+
+        .box {
+            background-color: burlywood;
+            font-size: 4em;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="center.html">Center</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="auto.html">Margin Auto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

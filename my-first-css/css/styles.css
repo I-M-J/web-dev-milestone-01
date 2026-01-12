@@ -1,0 +1,27 @@
+.blog {
+    background-color: lightpink;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#second-blog {
+    background-color: lightblue;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+#minima {
+    color: red;
+    border: 4px solid purple;
+    margin: 100px;
+    padding: 100px;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+li {
+    display: inline;
+}

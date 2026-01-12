@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+        .container div {
+            border: 2px solid tomato;
+            height: 100px;
+            width: 200px;
+            font-size: 3em;
+        }
+
+        .box-container {
+            display: flex;
+            gap: 50px
+        }
+
+        .box {
+            font-size: 3em;
+            height: 150px;         
+            width: 150px;
+            border: 2px solid slateblue;
+         }
+
+         .user-container {
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+         }
+
+         .user {
+            border: 4px solid blue;
+            height: 150px;
+            width: 150px;
+            font-size: 3em;
+            background-color: aquamarine;
+         }
+
+         .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+         }
+    </style>
+
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="center.html">Center</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="auto.html">Margin Auto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+    <div class="user-container">
+        <div class="user">User-1</div>
+        <div class="user">User-2</div>
+        <div class="user">User-3</div>
+    </div>
+
+    <div class="card-container">
+        <div class="user">User-1</div>
+        <div class="user">User-2</div>
+        <div class="user">User-3</div>
+        <div class="user">User-4</div>
+        <div class="user">User-5</div>
+        <div class="user">User-6</div>
+        <div class="user">User-7</div>
+        <div class="user">User-8</div>
+        <div class="user">User-9</div>
+        <div class="user">User-10</div>
+        <div class="user">User-11</div>
+        <div class="user">User-12</div>
+        <div class="user">User-13</div>
+        <div class="user">User-14</div>
+        <div class="user">User-15</div>
+        <div class="user">User-16</div>
+        <div class="user">User-17</div>
+        <div class="user">User-18</div>
+        <div class="user">User-19</div>
+        <div class="user">User-20</div>
+        <div class="user">User-21</div>
+        <div class="user">User-22</div>
+    </div>
+</body>
+</html>
