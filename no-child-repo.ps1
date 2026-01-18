@@ -52,10 +52,10 @@ function Move-GitFilesOut {
     foreach ($pattern in $GitPatterns) {
         $found = Get-ChildItem -Path $RootDir -Filter $pattern -Recurse -Force -ErrorAction SilentlyContinue |
                  Where-Object { 
-                     # Exclude items in no-child-repo folder
-                     ($_.FullName -notlike "*\no-child-repo\*") -and
-                     # Exclude items directly in root directory (only target subdirectories)
-                     ($_.Directory.FullName -ne $RootDir.Path)
+                    # Exclude items in no-child-repo folder
+                    ($_.FullName -notlike "*\no-child-repo\*") -and
+                    # Exclude items directly in root directory (only target subdirectories)
+                    ((Split-Path $_.FullName -Parent) -ne $RootDir.Path)
                  }
         $gitItems += $found
     }
